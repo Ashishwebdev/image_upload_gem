@@ -16,6 +16,7 @@
       <tr>
         <td><%= listing_post.Title %></td>
         <td><%= listing_post.Content %></td>
+        <td><%= image_tag listing_post.image.url(:thumb)%></td>
         <td><%= link_to 'Show', listing_post %></td>
         <td><%= link_to 'Edit', edit_listing_post_path(listing_post) %></td>
         <td><%= link_to 'Destroy', listing_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
