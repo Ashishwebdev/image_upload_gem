@@ -69,6 +69,6 @@ class ListingPostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_post_params
-      params.require(:listing_post).permit(:Title, :Content)
+      params.require(:listing_post).permit(:Title, :Content,:image)
     end
 end

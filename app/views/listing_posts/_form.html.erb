@@ -1,4 +1,4 @@
-<%= form_for(@listing_post) do |f| %>
+<%= form_for @listing_post, html: { multipart: true } do |f| %>
   <% if @listing_post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@listing_post.errors.count, "error") %> prohibited this listing_post from being saved:</h2>
@@ -10,6 +10,13 @@
       </ul>
     </div>
   <% end %>
+
+
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+
 
   <div class="field">
     <%= f.label :Title %><br>
