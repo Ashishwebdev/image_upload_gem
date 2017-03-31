@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @listing_post.Title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @listing_post.Content %>
+</p>
+
+<%= link_to 'Edit', edit_listing_post_path(@listing_post) %> |
+<%= link_to 'Back', listing_posts_path %>

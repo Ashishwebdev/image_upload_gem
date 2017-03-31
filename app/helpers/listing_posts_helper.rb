@@ -1,0 +1,2 @@
+module ListingPostsHelper
+end
